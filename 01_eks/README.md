@@ -8,7 +8,7 @@
 
 > https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/getting-started-install.html
 
-Command
+[Command]
 
 ```bash
 sudo apt install -y unzip
@@ -32,7 +32,7 @@ aws --version
 
 
 
-Output
+[Output]
 
 ```
 aws-cli/2.11.6 Python/3.11.2 Linux/5.4.0-137-generic exe/x86_64.ubuntu.20 prompt/off
@@ -42,7 +42,7 @@ aws-cli/2.11.6 Python/3.11.2 Linux/5.4.0-137-generic exe/x86_64.ubuntu.20 prompt
 
 ## 1.2. AWS Configration
 
-Command
+[Command]
 
 ```bash
 aws configure
@@ -61,7 +61,7 @@ aws sts get-caller-identity
 
 
 
-Output
+[Output]
 
 ```
 {
@@ -77,7 +77,7 @@ Output
 
 > https://docs.aws.amazon.com/ko_kr/eks/latest/userguide/eksctl.html
 
-Command
+[Command]
 
 ```bash
 curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
@@ -93,7 +93,7 @@ eksctl version
 
 
 
-Output
+[Output]
 
 ```
 0.135.0
@@ -105,7 +105,7 @@ Output
 
 > https://docs.aws.amazon.com/ko_kr/eks/latest/userguide/install-kubectl.html
 
-Command
+[Command]
 
 ```bash
 curl -O https://s3.us-west-2.amazonaws.com/amazon-eks/1.24.10/2023-01-30/bin/linux/amd64/kubectl
@@ -129,7 +129,7 @@ kubectl version --short --client
 
 
 
-Output
+[Output]
 
 ```
 Flag --short has been deprecated, and will be removed in the future. The --short output will become the default.
@@ -141,7 +141,7 @@ Kustomize Version: v4.5.4
 
 ## 1.5. SSH Key 생성
 
-Command
+[Command]
 
 ```bash
 ssh-keygen
@@ -156,7 +156,7 @@ Enter same passphrase again
 
 
 
-Output
+[Output]
 
 ```
 Your identification has been saved in /home/<User>/.ssh/id_rsa
@@ -181,7 +181,7 @@ The key's randomart image is:
 
 # 2. EKS Cluster 생성
 
-Command
+[Command]
 
 ```bash
 eksctl create cluster --name <Cluster Name> --region ap-northeast-2 --version 1.24 \
